@@ -1,0 +1,97 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "POC Elfuerte - API Gateway",
+    "dateExported": "2024-01-26T18:30:18.405Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6bbb311d-49b5-4744-81f6-f243f18d4295",
+            "colId": "8d44e9c5-5c73-46c3-adff-e41baf345778",
+            "containerId": "",
+            "name": "Get Files",
+            "url": "https://zrvxq60mkc.execute-api.us-east-1.amazonaws.com/v1/api/file/list",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-23T18:03:47.612Z",
+            "modified": "2024-01-26T16:26:22.674Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "09ccdf07-eefd-405e-a28d-11b3c8a6fb83",
+            "colId": "8d44e9c5-5c73-46c3-adff-e41baf345778",
+            "containerId": "",
+            "name": "Get by key",
+            "url": "https://zrvxq60mkc.execute-api.us-east-1.amazonaws.com/v1/api/file/ce0ac295-794a-4f3c-98e7-225969f92f8a",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-26T15:32:28.257Z",
+            "modified": "2024-01-26T15:32:28.257Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "459ee6fb-7bd6-4bee-883a-7af12185e01a",
+            "colId": "8d44e9c5-5c73-46c3-adff-e41baf345778",
+            "containerId": "",
+            "name": "Delete by key",
+            "url": "https://zrvxq60mkc.execute-api.us-east-1.amazonaws.com/v1/api/file/ce0ac295-794a-4f3c-98e7-225969f92f8a",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-01-26T15:32:48.399Z",
+            "modified": "2024-01-26T15:39:32.498Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5dfcbb58-8501-4441-8d0a-7a8394393352",
+            "colId": "8d44e9c5-5c73-46c3-adff-e41baf345778",
+            "containerId": "",
+            "name": "Upload File",
+            "url": "https://zrvxq60mkc.execute-api.us-east-1.amazonaws.com/v1/api/file/upload",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-26T15:33:07.678Z",
+            "modified": "2024-01-26T18:29:58.097Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "c:\\Users\\W512399\\Downloads\\Test9.txt"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
