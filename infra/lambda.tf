@@ -52,7 +52,7 @@ resource "aws_lambda_function" "poc-elfuerte-lambda" {
   function_name = "${var.function_name}"
   role = aws_iam_role.poc-elfuerte-lambda-iam-role.arn
   handler = "POCElfuerteLambda::POCElfuerteLambda.LambdaEntryPoint::FunctionHandlerAsync"
-  runtime = "dotnet6"
+  runtime = "dotnet8"
   timeout = 45
   memory_size = 256
   description = "${var.function_description}"
@@ -80,7 +80,7 @@ resource "aws_lambda_function" "lambda-api" {
   function_name = "${var.function_name1}"
   role = aws_iam_role.poc-elfuerte-lambda-iam-role.arn
   handler = "LambdaAPI::LambdaAPI.LambdaEntryPoint::FunctionHandlerAsync"
-  runtime = "dotnet6"
+  runtime = "dotnet8"
   timeout = 45
   memory_size = 256
   description = "${var.function_description}"
